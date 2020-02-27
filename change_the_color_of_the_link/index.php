@@ -9,9 +9,9 @@
 <body>
     <div id="block1">
         <p>Способ №1</p>
-        <a href="index.php?id=1" class="a_link <?php if ($_GET['id'] == 1) echo 'red'; ?>">Главная</a>
-        <a href="index.php?id=2" class="a_link <?php if ($_GET['id'] == 2) echo 'red'; ?>">Каталог</a>
-        <a href="index.php?id=3" class="a_link <?php if ($_GET['id'] == 3) echo 'red'; ?>">О нас</a>
+        <a href="index.php?id=1" class="a_link <?php if (isset($_GET['id']) && $_GET['id'] == 1){ echo 'red';} else { echo 'black';} ?>">Главная</a>
+        <a href="index.php?id=2" class="a_link <?php if (isset($_GET['id']) && $_GET['id'] == 2){ echo 'red';} else { echo 'black';} ?>">Каталог</a>
+        <a href="index.php?id=3" class="a_link <?php if (isset($_GET['id']) && $_GET['id'] == 3){ echo 'red';} else { echo 'black';} ?>">О нас</a>
     </div>
     
     <div id="block2">
